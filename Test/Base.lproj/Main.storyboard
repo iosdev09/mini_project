@@ -1,24 +1,415 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XjJ-bh-i3a">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="WMg-H8-WvQ">
+            <objects>
+                <viewController id="XjJ-bh-i3a" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VA5-wb-7am">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="팀원 선택" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfG-RK-nVJ">
+                                <rect key="frame" x="123" y="229" width="147" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTd-kz-EZN">
+                                <rect key="frame" x="86" y="389" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="손영빈">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="younggyu" id="rry-nW-p0F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ7-q4-JFR">
+                                <rect key="frame" x="86" y="447" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="이정인">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Mwf-ja-3DI" kind="show" identifier="youngbin" id="XhH-Lz-PMG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ut-5B-d6i">
+                                <rect key="frame" x="86" y="505" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="신영규">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6mL-k0-Og4" kind="show" identifier="jungin" id="Mwm-VP-Ovj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-5e-ieC">
+                                <rect key="frame" x="86" y="563" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="랜덤">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="randomButtonTapped" destination="XjJ-bh-i3a" eventType="touchUpInside" id="292-bt-CcG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PGm-uc-kNi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2R-On-B5Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967.17557251908397" y="130.98591549295776"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZx-EC-65u">
+                                <rect key="frame" x="16" y="118" width="361" height="709"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5P-Oj-Zgh">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1063.6666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KakaoTalk_Photo_2025-12-30-10-29-48" translatesAutoresizingMaskIntoConstraints="NO" id="vgc-Xu-w0d">
+                                                <rect key="frame" x="0.0" y="42" width="361" height="181"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="손영빈" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-Dt-Ll0">
+                                                <rect key="frame" x="8" y="0.0" width="120" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="안녕하세요. 울산에 거주하는 2001년생 손영빈입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jp2-aT-hLI">
+                                                <rect key="frame" x="0.0" y="243" width="361" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="장점 : 이해하고자 하는 것에는 시간이 얼마나 걸리더라도 끝까지 붙잡는 끈기가 있습니다. 또한, 함께하는 팀원을 돕고자 하는 마음이 커서 다 같이 협동하는 분위기를 만들기 위해 노력합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R4M-jH-9Mi">
+                                                <rect key="frame" x="0.0" y="333" width="361" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zGG-3e-ctd">
+                                                <rect key="frame" x="0.0" y="471" width="361" height="226.33333333333337"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">본인 스타일(협업, 공부) : 기초적인 이론 공부는 항상 중요하다고 생각합니다. 그러나 그보다 중요한 것이 직접 몸으로 체득하여 사용해보는 일이라고 생각합니다. 공부한 내용을 토대로 직접 본인의 생각을 표현할 수 있는 기능들을 개발해보면서 공부하는 것이 진정으로 중요하다고 생각합니다.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="궁극적인 목표 : 효율적인 개발 절차에 대한 공부와 사용자들의 실사용 피드백을 통한 버그 픽스 및 버전 업데이트들을 직접 체험해보고 싶습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VaB-WR-DXQ">
+                                                <rect key="frame" x="0.0" y="706" width="361" height="124"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="팀과의 약속 : 본인이 맡은 바를 책임감 있게 수행하겠습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uVx-T7-3sY">
+                                                <rect key="frame" x="0.0" y="838" width="361" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TOC-HU-xSu">
+                                                <rect key="frame" x="0.0" y="909" width="361" height="121.33333333333326"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">블로그 : https://velog.io/@ybin4548/posts
+Github : https://github.com/ybin4548</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="trailing" secondItem="egm-Zj-CyG" secondAttribute="trailing" id="EEQ-kQ-Hta"/>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="height" secondItem="thx-Qj-wm4" secondAttribute="height" multiplier="1.5" id="FI8-MJ-ZYn"/>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="leading" secondItem="egm-Zj-CyG" secondAttribute="leading" id="KOs-om-JUE"/>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="bottom" secondItem="egm-Zj-CyG" secondAttribute="bottom" id="X1f-Up-3Kk"/>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="width" secondItem="thx-Qj-wm4" secondAttribute="width" id="aeC-1c-zED"/>
+                                    <constraint firstItem="X5P-Oj-Zgh" firstAttribute="top" secondItem="egm-Zj-CyG" secondAttribute="top" id="b8d-6H-y4Z"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="egm-Zj-CyG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="thx-Qj-wm4"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Zfp-Bp-UVf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1723" y="835"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0te-yg-rgi">
+            <objects>
+                <viewController id="Mwf-ja-3DI" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rMt-Uc-Y2i">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oxC-pb-1kj">
+                                <rect key="frame" x="16" y="118" width="361" height="709"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZgD-8f-Cvt">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1063.6666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-jg-bTl">
+                                                <rect key="frame" x="0.0" y="42" width="361" height="181"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="이정인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IW0-bn-7GZ">
+                                                <rect key="frame" x="8" y="0.0" width="120" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="안녕하세요. 울산에 거주하는 2001년생 손영빈입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eDG-PF-aqz">
+                                                <rect key="frame" x="0.0" y="243" width="361" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="장점 : 이해하고자 하는 것에는 시간이 얼마나 걸리더라도 끝까지 붙잡는 끈기가 있습니다. 또한, 함께하는 팀원을 돕고자 하는 마음이 커서 다 같이 협동하는 분위기를 만들기 위해 노력합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IeN-8t-q4R">
+                                                <rect key="frame" x="0.0" y="333" width="361" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dVN-G8-Zgs">
+                                                <rect key="frame" x="0.0" y="471" width="361" height="226.33333333333337"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">본인 스타일(협업, 공부) : 기초적인 이론 공부는 항상 중요하다고 생각합니다. 그러나 그보다 중요한 것이 직접 몸으로 체득하여 사용해보는 일이라고 생각합니다. 공부한 내용을 토대로 직접 본인의 생각을 표현할 수 있는 기능들을 개발해보면서 공부하는 것이 진정으로 중요하다고 생각합니다.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="궁극적인 목표 : 효율적인 개발 절차에 대한 공부와 사용자들의 실사용 피드백을 통한 버그 픽스 및 버전 업데이트들을 직접 체험해보고 싶습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y30-VP-xCZ">
+                                                <rect key="frame" x="0.0" y="706" width="361" height="124"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="팀과의 약속 : 본인이 맡은 바를 책임감 있게 수행하겠습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1gW-2i-6Wr">
+                                                <rect key="frame" x="0.0" y="838" width="361" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YZn-Qx-vWK">
+                                                <rect key="frame" x="0.0" y="909" width="361" height="121.33333333333326"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">블로그 : https://velog.io/@ybin4548/posts
+Github : https://github.com/ybin4548</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="leading" secondItem="rNP-8M-mtq" secondAttribute="leading" id="UJn-ED-ZLw"/>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="width" secondItem="t5n-U7-n1g" secondAttribute="width" id="YnN-PF-5eH"/>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="trailing" secondItem="rNP-8M-mtq" secondAttribute="trailing" id="b7G-Xi-eAW"/>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="height" secondItem="t5n-U7-n1g" secondAttribute="height" multiplier="1.5" id="la0-Dy-kkp"/>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="top" secondItem="rNP-8M-mtq" secondAttribute="top" id="oRF-E7-kfe"/>
+                                    <constraint firstItem="ZgD-8f-Cvt" firstAttribute="bottom" secondItem="rNP-8M-mtq" secondAttribute="bottom" id="oS5-RW-E2K"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rNP-8M-mtq"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="t5n-U7-n1g"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LbB-wZ-zLa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rax-nZ-809"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5t-qW-Tk9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="835"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="yZg-v3-DtU">
+            <objects>
+                <viewController id="6mL-k0-Og4" customClass="ViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QSD-OI-198">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmi-7Y-biJ">
+                                <rect key="frame" x="16" y="118" width="361" height="709"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x46-Qe-sRa">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="1063.6666666666667"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUm-5i-Smy">
+                                                <rect key="frame" x="0.0" y="42" width="361" height="181"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="신영규" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTZ-3l-dvX">
+                                                <rect key="frame" x="8" y="0.0" width="120" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="안녕하세요. 울산에 거주하는 2001년생 손영빈입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-iZ-biQ">
+                                                <rect key="frame" x="0.0" y="243" width="361" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="장점 : 이해하고자 하는 것에는 시간이 얼마나 걸리더라도 끝까지 붙잡는 끈기가 있습니다. 또한, 함께하는 팀원을 돕고자 하는 마음이 커서 다 같이 협동하는 분위기를 만들기 위해 노력합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-eb-Epw">
+                                                <rect key="frame" x="0.0" y="333" width="361" height="131"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-37-wax">
+                                                <rect key="frame" x="0.0" y="471" width="361" height="226.33333333333337"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">본인 스타일(협업, 공부) : 기초적인 이론 공부는 항상 중요하다고 생각합니다. 그러나 그보다 중요한 것이 직접 몸으로 체득하여 사용해보는 일이라고 생각합니다. 공부한 내용을 토대로 직접 본인의 생각을 표현할 수 있는 기능들을 개발해보면서 공부하는 것이 진정으로 중요하다고 생각합니다.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="궁극적인 목표 : 효율적인 개발 절차에 대한 공부와 사용자들의 실사용 피드백을 통한 버그 픽스 및 버전 업데이트들을 직접 체험해보고 싶습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-cS-1cS">
+                                                <rect key="frame" x="0.0" y="706" width="361" height="124"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="팀과의 약속 : 본인이 맡은 바를 책임감 있게 수행하겠습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Ne-DXx">
+                                                <rect key="frame" x="0.0" y="838" width="361" height="74"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1HD-3h-6H7">
+                                                <rect key="frame" x="0.0" y="909" width="361" height="121.33333333333326"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">블로그 : https://velog.io/@ybin4548/posts
+Github : https://github.com/ybin4548</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="top" secondItem="XDq-gC-1bN" secondAttribute="top" id="0N3-QF-8JE"/>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="bottom" secondItem="XDq-gC-1bN" secondAttribute="bottom" id="JKb-C6-9z5"/>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="trailing" secondItem="XDq-gC-1bN" secondAttribute="trailing" id="Qzc-G6-BJy"/>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="width" secondItem="FHA-j5-baw" secondAttribute="width" id="fZP-fD-cUE"/>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="leading" secondItem="XDq-gC-1bN" secondAttribute="leading" id="fao-Yb-Ffc"/>
+                                    <constraint firstItem="x46-Qe-sRa" firstAttribute="height" secondItem="FHA-j5-baw" secondAttribute="height" multiplier="1.5" id="l7O-1D-Ou1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="XDq-gC-1bN"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="FHA-j5-baw"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dle-wb-pxx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hOp-9U-WRr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5KK-vg-y3B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="835"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="KakaoTalk_Photo_2025-12-30-10-29-48" width="4032" height="3024"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
