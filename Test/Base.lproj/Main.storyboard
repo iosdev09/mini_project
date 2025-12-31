@@ -308,7 +308,7 @@ Github : https://github.com/ybin4548</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x46-Qe-sRa">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="1063.6666666666667"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUm-5i-Smy">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KakaoTalk_20251208_152337969" translatesAutoresizingMaskIntoConstraints="NO" id="hUm-5i-Smy">
                                                 <rect key="frame" x="0.0" y="42" width="361" height="181"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <userDefinedRuntimeAttributes>
@@ -324,53 +324,36 @@ Github : https://github.com/ybin4548</string>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="안녕하세요. 울산에 거주하는 2001년생 손영빈입니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-iZ-biQ">
-                                                <rect key="frame" x="0.0" y="243" width="361" height="82"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-iZ-biQ">
+                                                <rect key="frame" x="0.0" y="243" width="361" height="226.33333333333337"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="장점 : 이해하고자 하는 것에는 시간이 얼마나 걸리더라도 끝까지 붙잡는 끈기가 있습니다. 또한, 함께하는 팀원을 돕고자 하는 마음이 커서 다 같이 협동하는 분위기를 만들기 위해 노력합니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-eb-Epw">
-                                                <rect key="frame" x="0.0" y="333" width="361" height="131"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">본인 소개 : 
+안녕하세요 , 나이는 26살이고, 서울에 거주하고 있는 사람입니다. 개발은 처음인 왕초보 개발자입니다. 개발을 해보신 분도 있고 아닌 분도 있을 텐데 원하시는 바 이루시길 바랍니다. 항상 행복하세요.
+취미는 게임하기, 팝송 듣기, 기타연주입니다  가끔 노래방에 가는걸 좋아합니다. </string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Yg-37-wax">
-                                                <rect key="frame" x="0.0" y="471" width="361" height="226.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="461" width="361" height="305"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">본인 스타일(협업, 공부) : 기초적인 이론 공부는 항상 중요하다고 생각합니다. 그러나 그보다 중요한 것이 직접 몸으로 체득하여 사용해보는 일이라고 생각합니다. 공부한 내용을 토대로 직접 본인의 생각을 표현할 수 있는 기능들을 개발해보면서 공부하는 것이 진정으로 중요하다고 생각합니다.</string>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="궁극적인 목표 : 효율적인 개발 절차에 대한 공부와 사용자들의 실사용 피드백을 통한 버그 픽스 및 버전 업데이트들을 직접 체험해보고 싶습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hdO-cS-1cS">
-                                                <rect key="frame" x="0.0" y="706" width="361" height="124"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" text="팀과의 약속 : 본인이 맡은 바를 책임감 있게 수행하겠습니다." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U16-Ne-DXx">
-                                                <rect key="frame" x="0.0" y="838" width="361" height="74"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">-장점: 활발하고 유머러스한 성격을 지닌게 장점입니다.
+-본인스타일 : 무엇을 하든지 최선을 다하자 라는 마인드를 지니고 있습니다.
+-협업스타일 : 적극적으로 서로  부족한 부분을 도우며 성장하고 싶습니다.
+-궁극적인 목표 :세상에 도움이 되고 편리함을 제공할 수 있는 개발자로 성장하고 싶습니다.
+-팀과의 약속 : 다같이 최선을 다해서 좋은 작품을 만들었으면 좋겠습니다~</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1HD-3h-6H7">
-                                                <rect key="frame" x="0.0" y="909" width="361" height="121.33333333333326"/>
+                                                <rect key="frame" x="0.0" y="789" width="361" height="121.33333333333337"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">블로그 : https://velog.io/@ybin4548/posts
-Github : https://github.com/ybin4548</string>
+                                                <string key="text">블로그 : https://velog.io/@syyoung8553/posts
+Github : https://github.com/syyoung8553-lab</string>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -420,6 +403,7 @@ Github : https://github.com/ybin4548</string>
         </scene>
     </scenes>
     <resources>
+        <image name="KakaoTalk_20251208_152337969" width="703" height="767"/>
         <image name="KakaoTalk_Photo_2025-12-30-10-29-48" width="4032" height="3024"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
