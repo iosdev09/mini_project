@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func randomButtonTapped() {
-        let person = ["youngbin", "jungin", "younggyu"]
+        let person = ["youngbin", "jeongin", "younggyu"]
         let idx = Int.random(in: 0...2)
         let selectedPerson = person[idx]
         
